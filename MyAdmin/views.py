@@ -26,11 +26,10 @@ def logout_view(request):
 def baseexample(request):
     return render(request, 'MyAdmin/baseexample.html', {})
 
-def homepage(request):
-    return render(request, 'MyAdmin/home.html', {})
+def get_page(request):
+    return True
 
-def about(request):
-    return render(request,'MyAdmin/About.html')
+
 
 def mainmenu(request):
     return render(request, 'MyAdmin/mainmenu.html', {})
